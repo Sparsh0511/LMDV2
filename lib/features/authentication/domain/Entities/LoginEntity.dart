@@ -1,4 +1,7 @@
-class LoginEntity {
+import 'package:dartz/dartz.dart';
+import 'package:equatable/equatable.dart';
+
+class LoginEntity extends Equatable {
   int? commandstatus;
   String? commandmessage;
   int? companyid;
@@ -57,4 +60,36 @@ class LoginEntity {
       this.divisionlogin,
       this.logilockeruserid,
       this.logilockerpassword});
+      
+        @override
+        List<Object?> get props => [
+          commandstatus,
+          commandmessage,
+          companyid,
+          displayname,
+          location,
+          dbname,
+          serverip,
+          dbpassword,
+          connstring,
+          compname,
+          logoimage,
+          grouplogin,
+          mobileno,
+          username,
+          password,
+          ewayuserid,
+          ewaypassword,
+          enableeway,
+          compgstin,
+          smtpfrom,
+          host,
+          port,
+          emailusername,
+          emailpassword,
+          ewayurl,
+          divisionlogin,
+          logilockeruserid,
+          logilockerpassword
+];
 }

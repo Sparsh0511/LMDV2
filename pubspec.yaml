@@ -7,10 +7,13 @@ environment:
   sdk: ^3.8.0
 
 dependencies:
+  connectivity_plus: ^6.1.4
   dartz: ^0.10.1
+  equatable: ^2.0.7
   flutter:
     sdk: flutter
   http: ^1.4.0
+  internet_connection_checker: ^3.0.1
   provider: ^6.1.5
 
 dev_dependencies:

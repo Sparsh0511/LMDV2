@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gtlmd_v2/core/Providers/ThemeProvider.dart';
+import 'package:gtlmd_v2/features/authentication/presentation/Pages/Login.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -21,11 +22,8 @@ class MainApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: HomePage(),
+      
     );
   }
 }
